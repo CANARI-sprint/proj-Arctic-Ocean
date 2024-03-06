@@ -1,0 +1,49 @@
+name: canari
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.12
+  - jupyterlab
+  - nb_conda_kernels
+  - dask
+  - distributed
+  - numpy
+  - scipy
+  - numba
+  - bottleneck
+  - netcdf4
+  - xarray
+  - zarr
+  - iris
+  - cftime
+  - intake-xarray
+  - cf-python
+  - nc-time-axis
+  - matplotlib
+  - cartopy
+  - seaborn
+  - cmocean
+  - cmasher
+  - esmpy
+  - xesmf
+  - esmf
+  - ipykernel
+  - gsw
+  - git
+  - nco
+  - regionmask
+  - geopy
+  - tqdm
+  - aiohttp
+  - requests
+  - geos
+  - shapely
+  - pyshp
+  - pyjokes
+  - bodc::coast
+  - pip
+  - gsw-xarray
+  - ca-certificates
+  - certifi
+  - openssl
+prefix: /home/users/eboland/.conda/envs/canari
