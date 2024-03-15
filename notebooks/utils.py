@@ -2,6 +2,7 @@ from scipy import signal
 import xarray as xr
 import numpy as np
 import xmip.preprocessing as pp
+import warnings
 
 ##Create 4th order Bworth filter
 def butter_lowpass(data,cut,order=4,sample_freq=1) :
@@ -48,6 +49,7 @@ def rename_cmip6(ds, rename_dict=None):  #Edited version of xmip preprocessing
 
     if rename_dict is None:
         rename_dict = pp.cmip6_renaming_dict()
+    rename_dict['time']=['time_counter',]
 
     # TODO: Be even stricter here and reset every variable except the one given in the attr
     # as variable_id
